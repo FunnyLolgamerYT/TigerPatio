@@ -1,5 +1,9 @@
 <?php
 session_start();
+if($_SERVER["REQUEST_METHOD"] === "POST"&& isset($_POST['logout'])) {
+    session_destroy();
+    header ('Location: index.php');
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -19,7 +23,15 @@ session_start();
         <li><a href="">Home</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Admin</a></li>
-        <li><a href="login.php">Login</a></li>
+        <?php
+        if(isset($_SESSION['username'])) {
+        echo "<li><a href='login.php'>Logged in</a></li>";
+        echo "<li><form method='POST'><button type='submit' name='logout'>logout</button></form></li>";
+        } else {
+           echo "<li><a href='login.php'>Login</a></li>";
+        }
+       
+        ?> 
     </ul>
 </nav>
 
