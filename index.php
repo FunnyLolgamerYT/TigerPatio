@@ -11,10 +11,19 @@ session_start();
     <title>Index</title>
     <link rel="stylesheet" href="style.css?v=0">
 </head>
+
+
 <body>
-<div class="HotBar"></div>
-<div  class="ui" id="login"><img id="login-image" alt="login" src="20079.png"> </div>
-</div>
+<nav class="HotBar">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Admin</a></li>
+        <li><a href="">Login</a></li>
+    </ul>
+</nav>
+
+<main>
 <h1 >Upcoming events</h1>
 
 <div class="Event">
@@ -25,6 +34,9 @@ session_start();
 <p> HEHEHE</p>
 
 <p>Tets</p>
+</main>
+
+
 
 </body>
 </html>
