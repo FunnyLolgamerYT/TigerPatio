@@ -57,7 +57,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 }
             } else {
-                header("Location: Incorrect username or password.");
+                header("Location: login.php?error=Incorrect username or password.");
 
             }
             exit();

@@ -1,0 +1,39 @@
+/* Stijl voor de h1-kop */
+h1 {
+  color: #55789b;
+  font-size: 24px;
+}
+
+/* Stijl voor het formulier */
+form {
+  background-color: #3e5c76;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Stijl voor de tekstvelden */
+input[type="text"],
+input[type="number"] {
+  background-color: #1d2d44;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Stijl voor de knop */
+input[type="submit"] {
+  background-color: #55789b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Stijl voor de link */
+a {
+  color: #55789b;
+  text-decoration: none;
+}

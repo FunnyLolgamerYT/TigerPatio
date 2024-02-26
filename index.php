@@ -20,9 +20,13 @@ if($_SERVER["REQUEST_METHOD"] === "POST"&& isset($_POST['logout'])) {
 <body>
 <nav class="HotBar">
     <ul>
-        <li><a href="">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="">About</a></li>
-        <li><a href="">Admin</a></li>
+        <?php
+        if(isset($_SESSION["AdminLVL"]) && $_SESSION["AdminLVL"] >= 1) {
+        echo '<li><a href="admin.php">Admin</a></li>';
+        }
+        ?>
         <?php
         if(isset($_SESSION['username'])) {
         echo "<li><a href='login.php'>Logged in</a></li>";
