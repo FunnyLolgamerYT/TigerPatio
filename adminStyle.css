@@ -16,7 +16,7 @@ input[type="text"],
 input[type="number"] {
   background-color: #1d2d44;
   color: #ffffff;
-  border: none;
+  border: white 1px solid;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
